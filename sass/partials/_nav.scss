@@ -1,0 +1,74 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+  padding: 20px 50px;
+  // typography
+  font-size: 20px;
+  @media screen and (max-width: 660px) {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    height: auto;
+    padding: 10px 25px;
+  }
+  @media screen and (max-width: 470px) {
+    font-size: 16px;
+  }
+}
+.nav__logo-Links {
+  display: flex;
+  align-items: center;
+  // typography
+  color: #012f9e;
+  @media screen and (max-width: 660px) {
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+.nav__logo {
+  background: url("../assets/images/logo.png") center / cover no-repeat;
+  height: 35px;
+  width: 35px;
+}
+.nav__link {
+  margin-left: 30px;
+  cursor: pointer;
+  @media screen and (max-width: 660px) {
+    margin-left: 15px;
+  }
+}
+.nav__link:hover {
+  font-size: 23px;
+  border-bottom: 3px solid #3251aa;
+}
+.nav__login-lang {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 660px) {
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+.nav__login {
+  cursor: pointer;
+}
+.nav__login:hover {
+  font-size: 23px;
+  border-bottom: 3px solid #3251aa;
+}
+.nav__lang {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid grey;
+}
+.nav__flag {
+  width: 30px;
+}
+.nav_langText {
+  margin-left: 10px;
+}

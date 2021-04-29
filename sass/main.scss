@@ -1,0 +1,25 @@
+@import "./partials/reset";
+@import "./partials/nav";
+@import "./partials/hero";
+@import "./partials/about";
+@import "./partials/featured";
+@import "./partials//inspire";
+@import "./partials/services";
+@import "./partials/social";
+@import "./partials/footer";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+//fonts
+$Montserrat: "Montserrat";
+$Roboto: "Roboto";
+
+.fade {
+  opacity: 0;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all ease-out 0.5s;
+}

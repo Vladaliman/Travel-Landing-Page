@@ -1,0 +1,116 @@
+.featured {
+  display: flex;
+  flex-direction: column;
+  background-color: #012f9e;
+  padding: 50px 0px;
+  z-index: 0;
+}
+.featured__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+}
+.card__wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+.featured__title {
+  color: white;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  @media screen and (max-width: 800px) {
+    text-align: center;
+    font-size: 30px;
+    max-width: 190px;
+    margin: 0px auto;
+    margin-bottom: 30px;
+  }
+}
+.featured__cardList {
+  display: flex;
+  min-width: 100%;
+  align-items: center;
+  @media screen and (max-width: 1300px) {
+    flex-direction: column;
+  }
+}
+.featured__card {
+  position: relative;
+  z-index: 2;
+  min-width: 280px;
+  max-width: 300px;
+  background-color: white;
+  color: #001f68;
+  margin-right: 30px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  @media screen and (max-width: 1300px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width: 400px) {
+    min-width: 240px;
+    max-width: 240px;
+    margin-right: 0px;
+  }
+}
+.featured__card:hover {
+  max-width: 290px;
+  @media screen and (max-width: 400px) {
+    min-width: 250px;
+  }
+}
+
+.featured__cardImg {
+  width: 100%;
+  z-index: 2;
+}
+.featured__cardWrapper {
+  padding: 25px;
+}
+.featured__cardTitle {
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+.featured__cardPrice {
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #143fa3;
+}
+.featured__cardCta {
+  color: #143fa3;
+  font-weight: bold;
+  font-size: 25px;
+  z-index: 2;
+  cursor: pointer;
+}
+.featured__cardCta:hover {
+  letter-spacing: 3px;
+}
+.-limited::before {
+  content: "3h left at this rate";
+  position: absolute;
+  top: 25px;
+  left: -10px;
+  padding: 5px;
+  background-color: yellow;
+  color: #143fa3;
+  font-weight: bold;
+  font-size: 18px;
+}
+.-limited::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 40px;
+  left: -5px;
+  z-index: -1;
+  background-color: rgb(139, 139, 39);
+  transform: rotate(300deg);
+}
